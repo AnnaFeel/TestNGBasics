@@ -30,7 +30,6 @@ You should write your test cases under this annotation.
 This is the main annotation in testNG
 By default testNG excutes the methods in alphabetical order.
 
-
 2.@BeforeMethod:
 runs every time before the @test is executed
 also called precondition
@@ -38,7 +37,6 @@ also called precondition
 3.@AfterMethod:
 runs after each @test Method
 also called post condition
-
 
 before method is preconditon that must run before every test case and the post conditon will run after
 the test case has ended
@@ -48,13 +46,11 @@ by deafault the priority is zero of all the test case
 in order to give them a priority order
 use @Test(priority =1)
 
-
 Enabled:
 @Test(enabled=false)--> will not run the test cases that are set false
 by deafult all test cases are set to enabled=true
 
 DependsOn:
-
 @Test(dependsOnMethods = "methodName")
 will only run if the depndent method has passed successfully else it will be skipped
 
@@ -92,18 +88,14 @@ at the end you must do
 3.soft.Assertall().
 
 After the declaration when u use soft.assert it just checks the assertion but does not take any action or display any output.
-once tall the assertions are done
-then u use soft.Assertall()
-to compile the result of all the assertion and show you the results on screen.
+once all the assertions are done
+then u use soft.Assertall() to compile the result of all the assertion and show you the results on screen.
 
 how to create a git repo
-
 1.navigate to the location where ur project is.
 2.Decide where to create the repo
 NO SUBREPOSITORIES-->please :)
-
 3.initalize the repo using     git init
-
 4. git add .
 5. git commit -m "message"
 
